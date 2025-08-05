@@ -1,0 +1,12 @@
+/* Custom styles for ResuMagic */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, #4A90E2, #50E3C2);
+}
+
+button {
+    transition: background-color 0.3s ease;
+}

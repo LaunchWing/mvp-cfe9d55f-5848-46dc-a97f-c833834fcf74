@@ -1,0 +1,6 @@
+/resumagic
+  |-- /public
+  |-- /functions
+      |-- api.js
+  |-- package.json
+  |-- wrangler.toml

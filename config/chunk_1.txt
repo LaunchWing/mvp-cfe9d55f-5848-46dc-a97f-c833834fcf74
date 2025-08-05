@@ -1,0 +1,19 @@
+{
+  "name": "resumagic",
+  "version": "1.0.0",
+  "description": "Craft Your Perfect Resume with AI Precision",
+  "main": "index.js",
+  "scripts": {
+    "build": "your-build-command",
+    "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^3.0.0",
+    "some-ai-library": "^1.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

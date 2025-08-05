@@ -1,0 +1,22 @@
+name = "resumagic"
+type = "javascript"
+account_id = "your-cloudflare-account-id"
+workers_dev = true
+compatibility_date = "2023-10-01"
+
+[build]
+command = "npm run build"
+[build.upload]
+format = "modules"
+dir = "dist"
+
+[site]
+bucket = "./public"
+entry-point = "functions"
+
+[[[[functions]]]]
+name = "api"
+main = "./functions/api.js"
+
+[env.production]
+route = "yourdomain.com/*"

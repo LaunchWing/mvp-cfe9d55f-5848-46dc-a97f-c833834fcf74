@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMagic - Craft Your Perfect Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-500 p-4 flex items-center justify-between">
+        <img src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-eeM7RLe3Wv2HZ7Toub47POas/user-rnGwZEmjnwoUoF8lEvadvt0O/img-VaxjXFvfimB5W4pzzXjU4r51.png?st=2025-08-05T17%3A40%3A44Z&se=2025-08-05T19%3A40%3A44Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=cc612491-d948-4d2e-9821-2683df3719f5&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-08-04T19%3A21%3A37Z&ske=2025-08-05T19%3A21%3A37Z&sks=b&skv=2024-08-04&sig=BwDZ/zL%2BP9fg/GfutR3V2g/14MUC4OE3MpyIenAD8co%3D" alt="ResuMagic Logo" class="h-12">
+        <h1 class="text-white text-2xl font-bold">ResuMagic</h1>
+    </header>
+    
+    <main class="container mx-auto p-6">
+        <h2 class="text-xl font-semibold mb-4">Craft Your Perfect Resume with AI Precision</h2>
+        <p class="mb-6">Welcome to ResuMagic, where AI meets resume crafting. Get started by entering your details below.</p>
+        
+        <form id="resumeForm" class="bg-white p-6 rounded shadow-md">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Your Name">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Your Email">
+            </div>
+            <div class="mb-4">
+                <label for="careerGoal" class="block text-sm font-medium text-gray-700">Career Goal</label>
+                <textarea id="careerGoal" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" placeholder="Describe your career goals"></textarea>
+            </div>
+            <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Generate Resume</button>
+        </form>
+    </main>
+
+    <footer class="bg-gray-800 p-4 text-center text-white">
+        <p>&copy; 2023 ResuMagic. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

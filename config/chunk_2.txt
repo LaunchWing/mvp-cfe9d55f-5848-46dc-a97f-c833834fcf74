@@ -1,0 +1,13 @@
+export async function onRequest(context) {
+  const { request } = context;
+  const url = new URL(request.url);
+
+  if (url.pathname === "/api/generate-resume") {
+    // Your AI resume generation logic here
+    return new Response(JSON.stringify({ message: "Resume generated!" }), {
+      headers: { "Content-Type": "application/json" },
+    });
+  }
+
+  return new Response("Not Found", { status: 404 });
+}
